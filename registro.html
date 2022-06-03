@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script type="text/javascript" src="js/funciones.js" ></script>
     <title>Parcial Nro 1 - Lenguajes de programación para la administración - Leandro Ruiz</title>
 </head>
 <body>
     <header>
+        <h1>Parcial Nro 1 - Lenguajes de programación para la administración</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -21,7 +23,7 @@
         </nav>
     </header>
     <section>
-        <h1>Formulario de registro</h1>
+        <h2>Formulario de registro</h2>
         <form name="formulario" action="">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
@@ -38,15 +40,14 @@
             <label for="genero">Género</label>
             <input type="radio" name="genero" id="generoInput" value="mujer">Mujer
             <input type="radio" name="genero" id="generoInput" value="hombre">Hombre
+            <input type="radio" name="genero" id="generoInput" value="otro">Otro
             <p id="generoError" class="hiddenError">Debe seleccionar un género</p>
             <label for="temas">Temas de interés</label>
-            <select id="pais" name="pais">
-                <option value="deporte">Deporte</option>
-                <option value="musica">Música</option>
-                <option value="juegos">Juegos</option>
-                <option value="tecnologia">Tecnología</option>
-                <option value="otros">Otros</option>
-            </select>
+            <input type="checkbox" value="deporte" name="deporte" id="deporteInput">Deportes
+            <input type="checkbox" value="musica" name="musica" id="musicaInput">Música
+            <input type="checkbox" value="juego" name="juego" id="juegoInput">Juegos
+            <input type="checkbox" value="tecnologia" name="tecnologiaInput" id="tecnologia">Tecnología
+            <input type="checkbox" value="otro" name="otro" id="otroInput">Otros
             <p id="temasError" class="hiddenError">Debe seleccionar al menos un tema de interés</p>
             <label for="pais">País</label>
             <select id="pais" name="pais">
