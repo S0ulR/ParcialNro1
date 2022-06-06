@@ -8,10 +8,9 @@ body {
 }
 
 header {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%;
+    height: auto;
     background-color: #FF00C1;
     order: 1;
 }
@@ -33,13 +32,7 @@ nav li a{
     height: 3rem;
     border: 1px solid #000000;
     color: #ffffff;
-    width: 90%;
     text-align: center;
-}
-
-nav li a:hover{
-    color: #000000;
-    background-color: #ffffff;
 }
 
 section {
@@ -52,23 +45,41 @@ section {
 footer{
     height: auto;
     padding: 3%;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FF00C1;
     order: 3;
 }
 
-input{
+input, select{
     display: flex;
     flex-direction: column;
+    margin-left: 3%;
 }
 
-.temas{
-    display: block;
+label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
 }
 
-#Error {
+textarea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    height:5rem ;
+    width: 20rem;
+}
+
+button{
+    margin-top: 2%;
+    align-self: center;
+    background-color: #710056;
+    color: #ffffff;
+    border: #ffffff solid 1px;
+}
+
+#nombreError, #apellidoError, #emailError, #edadError, #generoError, #temasError, #paisError {
     color: red;
 }
 
@@ -112,6 +123,11 @@ ul li a:hover{
 
 section{
     align-items: flex-start;
-    margin-left: 40px;
+    margin-left: 50px;
+}
+
+button:hover{    
+    background-color: #DF02F9;
+    color: #000000;
 }
 }

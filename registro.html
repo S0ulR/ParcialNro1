@@ -25,31 +25,31 @@
     </header>
     <section>
         <h2>Formulario de registro</h2>
-        <form name="formulario" action="">
+        <form name="formulario" action="/login.php" id="formulario">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
-            <p id="nombreError" class="hiddenErrorNombre">Debe tener al menos 3 caracteres</p>
+            <p id="nombreError" class="hiddenError">Debe tener al menos 3 caracteres</p>
             <label for="apellido">Apellido</label>
             <input type="text" name="apellido" id="apellidoInput" placeholder="Introduzca su apellido">
-            <p id="apellidoError" class="hiddenErrorApellido">Debe tener al menos 3 caracteres</p>
+            <p id="apellidoError" class="hiddenError">Debe tener al menos 3 caracteres</p>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="emailInput" placeholder="Escriba su e-mail">
-            <p id="emailError" class="hiddenErrorEmail">Introduzca una dirección de correo válida</p>
+            <p id="emailError" class="hiddenError">Introduzca una dirección de correo válida</p>
             <label for="edad">Edad</label>
             <input type="number" name="edad" id="edadInput" placeholder="Indique su edad">
-            <p id="edadError" class="hiddenErrorEdad">No ingreso una edad válida</p>
+            <p id="edadError" class="hiddenError">No ingreso una edad válida</p>
             <label for="genero">Género</label>
             <input type="radio" name="genero" id="mujerInput" value="mujer">Mujer
             <input type="radio" name="genero" id="hombreInput" value="hombre">Hombre
             <input type="radio" name="genero" id="otroInput" value="otro">Otro
-            <p id="generoError" class="hiddenErrorGenero">Debe seleccionar un género</p>
+            <p id="generoError" class="hiddenError">Debe seleccionar un género</p>
             <label for="temas">Temas de interés</label>
             <input type="checkbox" class="temas" value="deporte" name="deporte" id="deporteInput">Deportes
             <input type="checkbox" class="temas" value="musica" name="musica" id="musicaInput">Música
             <input type="checkbox" class="temas" value="juego" name="juego" id="juegoInput">Juegos
             <input type="checkbox" class="temas" value="tecnologia" name="tecnologiaInput" id="tecnologia">Tecnología
             <input type="checkbox" class="temas" value="otro" name="otro" id="otroInput">Otros
-            <p id="temasError" class="hiddenErrorTemas">Debe seleccionar al menos un tema de interés</p>
+            <p id="temasError" class="hiddenError">Debe seleccionar al menos un tema de interés</p>
             <label for="pais">País</label>
             <select id="pais" name="pais">
                 <option value="argentina">Argentina</option>
@@ -57,7 +57,7 @@
                 <option value="brasil">Brasil</option>
                 <option value="uruguay">Uruguay</option>
             </select>
-            <p id="paisError" class="hiddenErroPaisr">Debe seleccionar un país</p>
+            <p id="paisError" class="hiddenError">Debe seleccionar un país</p>
             <label for="comentario">Comentarios</label>
             <textarea name="comentario" id="comentarioInput" placeholder="Déjenos su comentario..."></textarea>
             <button class="enviar" type="submit">Enviar</button>
