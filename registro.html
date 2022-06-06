@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="formulario de registro responsivo mobile first">
+    <meta name="author" content="Leandro Ruiz">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script type="text/javascript" src="js/funciones.js" ></script>
@@ -11,12 +13,11 @@
 </head>
 <body>
     <header>
-        <h1>Parcial Nro 1 - Lenguajes de programación para la administración</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="quienes_somos.html">Quiénes somos?</a></li>
-                <li><a href="productos.html">Productos.html</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="registro.html">Regístrate</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -24,7 +25,7 @@
     </header>
     <section>
         <h2>Formulario de registro</h2>
-        <form name="formulario" action="">
+        <form name="formulario" action="/login.php" id="formulario">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
             <p id="nombreError" class="hiddenError">Debe tener al menos 3 caracteres</p>
@@ -38,16 +39,16 @@
             <input type="number" name="edad" id="edadInput" placeholder="Indique su edad">
             <p id="edadError" class="hiddenError">No ingreso una edad válida</p>
             <label for="genero">Género</label>
-            <input type="radio" name="genero" id="generoInput" value="mujer">Mujer
-            <input type="radio" name="genero" id="generoInput" value="hombre">Hombre
-            <input type="radio" name="genero" id="generoInput" value="otro">Otro
+            <input type="radio" name="genero" id="mujerInput" value="mujer">Mujer
+            <input type="radio" name="genero" id="hombreInput" value="hombre">Hombre
+            <input type="radio" name="genero" id="otroInput" value="otro">Otro
             <p id="generoError" class="hiddenError">Debe seleccionar un género</p>
             <label for="temas">Temas de interés</label>
-            <input type="checkbox" value="deporte" name="deporte" id="deporteInput">Deportes
-            <input type="checkbox" value="musica" name="musica" id="musicaInput">Música
-            <input type="checkbox" value="juego" name="juego" id="juegoInput">Juegos
-            <input type="checkbox" value="tecnologia" name="tecnologiaInput" id="tecnologia">Tecnología
-            <input type="checkbox" value="otro" name="otro" id="otroInput">Otros
+            <input type="checkbox" class="temas" value="deporte" name="deporte" id="deporteInput">Deportes
+            <input type="checkbox" class="temas" value="musica" name="musica" id="musicaInput">Música
+            <input type="checkbox" class="temas" value="juego" name="juego" id="juegoInput">Juegos
+            <input type="checkbox" class="temas" value="tecnologia" name="tecnologiaInput" id="tecnologia">Tecnología
+            <input type="checkbox" class="temas" value="otro" name="otro" id="otroInput">Otros
             <p id="temasError" class="hiddenError">Debe seleccionar al menos un tema de interés</p>
             <label for="pais">País</label>
             <select id="pais" name="pais">
