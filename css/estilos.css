@@ -46,7 +46,7 @@ footer{
     height: auto;
     padding: 3%;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #FF00C1;
     order: 3;
 }
