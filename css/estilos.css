@@ -11,6 +11,7 @@ header {
     justify-content: center;
     align-items: center;
     height: auto;
+    padding-top: 0;
     background-color: #FF00C1;
     order: 1;
 }
@@ -48,7 +49,7 @@ footer{
     justify-content: center;
     text-align: center;
     background-color: #FF00C1;
-    order: 3;
+    order: 3;margin-top: 2%;
 }
 
 input, select{
@@ -61,39 +62,36 @@ label{
     display: flex;
     flex-direction: column;
     margin-top: 3%;
+    margin-bottom: auto;
 }
 
 textarea{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3%;
     height:5rem ;
     width: 20rem;
+    margin-bottom: 2%;
 }
 
 button{
-    margin-top: 2%;
-    align-self: center;
     background-color: #710056;
     color: #ffffff;
     border: #ffffff solid 1px;
 }
 
-#nombreError, #apellidoError, #emailError, #edadError, #generoError, #temasError, #paisError {
+#warnings {
     color: red;
+    text-shadow: none;
 }
 
-.hiddenError {
-    display: none;
-}
 
 @media only screen and (min-width: 980px) {
       
 body{
     width: 100%;
     text-align: left;
-}      
-     
+}
+   
 nav{
     height: 150px;
     text-align: center;
