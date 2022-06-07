@@ -25,42 +25,39 @@
     </header>
     <section>
         <h2>Formulario de registro</h2>
-        <form name="formulario" action="/login.php" id="formulario">
-            <label for="nombre">Nombre</label>
+        <form name="formulario" action="" id="formulario" onsubmit="validarFormulario()">
+            <label for="nombre">(*) Nombre: </label>
             <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
-            <p id="nombreError" class="hiddenError">Debe tener al menos 3 caracteres</p>
-            <label for="apellido">Apellido</label>
+            <label for="apellido">(*) Apellido: </label>
             <input type="text" name="apellido" id="apellidoInput" placeholder="Introduzca su apellido">
-            <p id="apellidoError" class="hiddenError">Debe tener al menos 3 caracteres</p>
-            <label for="email">E-mail</label>
+            <label for="email">(*) E-mail: </label>
             <input type="email" name="email" id="emailInput" placeholder="Escriba su e-mail">
-            <p id="emailError" class="hiddenError">Introduzca una dirección de correo válida</p>
-            <label for="edad">Edad</label>
-            <input type="number" name="edad" id="edadInput" placeholder="Indique su edad">
-            <p id="edadError" class="hiddenError">No ingreso una edad válida</p>
-            <label for="genero">Género</label>
-            <input type="radio" name="genero" id="mujerInput" value="mujer">Mujer
-            <input type="radio" name="genero" id="hombreInput" value="hombre">Hombre
-            <input type="radio" name="genero" id="otroInput" value="otro">Otro
-            <p id="generoError" class="hiddenError">Debe seleccionar un género</p>
-            <label for="temas">Temas de interés</label>
-            <input type="checkbox" class="temas" value="deporte" name="deporte" id="deporteInput">Deportes
-            <input type="checkbox" class="temas" value="musica" name="musica" id="musicaInput">Música
-            <input type="checkbox" class="temas" value="juego" name="juego" id="juegoInput">Juegos
-            <input type="checkbox" class="temas" value="tecnologia" name="tecnologiaInput" id="tecnologia">Tecnología
-            <input type="checkbox" class="temas" value="otro" name="otro" id="otroInput">Otros
-            <p id="temasError" class="hiddenError">Debe seleccionar al menos un tema de interés</p>
-            <label for="pais">País</label>
+            <label for="edad">(*) Edad: </label>
+            <input type="text" name="edad" id="edadInput" placeholder="Indique su edad">
+            <label for="genero">(*) Sexo: </label>
+            <input type="radio" name="genero" id="genero1">Mujer
+            <input type="radio" name="genero" id="genero2">Hombre
+            <input type="radio" name="genero" id="genero3">Otro
+            <label for="temas">(*) Temas de interés: </label>
+            <input type="checkbox" class="temas" value="deporte" name="temas" id="deporte">Deportes
+            <input type="checkbox" class="temas" value="musica" name="temas" id="musica">Música
+            <input type="checkbox" class="temas" value="juego" name="temas" id="juego">Juegos
+            <input type="checkbox" class="temas" value="tecnologia" name="temas" id="tecnologia">Tecnología
+            <input type="checkbox" class="temas" value="otro" name="temas" id="otro">Otros
+            <label for="pais">(*) País: </label>
             <select id="pais" name="pais">
+                <option value=""></option>
                 <option value="argentina">Argentina</option>
                 <option value="chile">Chile</option>
                 <option value="brasil">Brasil</option>
                 <option value="uruguay">Uruguay</option>
             </select>
-            <p id="paisError" class="hiddenError">Debe seleccionar un país</p>
-            <label for="comentario">Comentarios</label>
+            <label for="comentario">Comentarios: </label>
             <textarea name="comentario" id="comentarioInput" placeholder="Déjenos su comentario..."></textarea>
+            <p id="nombreError"></p>
+            <p>(*) Campos obligatorios</p>
             <button class="enviar" type="submit">Enviar</button>
+            <p class="warnings" id="warnings"></p>
         </form>
     </section>
     <footer>
